@@ -4,55 +4,56 @@
 namespace App\Models\Reports;
 
 
+use App\Actions\Reports\PersistExportedFileAction;
 use App\Exports\BookingExportExcel;
+use App\Queries\Bookings\BookingsArrivingOnThisDate;
+use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 
 class BookingExportReport extends Report
 {
+    public $date;
 
-    /**
-     * @param $fromDate
-     * @param $toDate
-     * @return $this
-     */
-    public function arrivingBetween($fromDate, $toDate)
+    public function __construct($date = null)
     {
-        $arrivals = $this->model->arrivingBetween($fromDate, $toDate)->get();
+        parent::__construct();
 
-        $this->collection->put('arrivals', $arrivals);
-
-        return $this;
+        $this->date = $date ? Carbon::parse($date) : Carbon::now();
     }
 
-    /**
-     * @param $fromDate
-     * @param $toDate
-     * @return $this
-     */
-    public function returningBetween($fromDate, $toDate)
+    public function collection()
     {
-        $returns = $this->model->returningBetween($fromDate, $toDate)->get();
-
-        $this->collection->put('returns', $returns);
-
-        return $this;
+        return (new BookingsArrivingOnThisDate($this->date))->get();
     }
-
 
     public function generate()
     {
-        $filename = Str::random(10) . '.xlsx';
+        $this->collection = $this->collection();
 
-         \Excel::store(new BookingExportExcel($this->collection), $filename, 'local');
-
-         $this->saveFile(\Storage::path($filename));
-
+        return $this->saveFile();
     }
 
-    protected function saveFile($path)
+    protected function saveFile()
     {
 
+        // Temporarily store newly created file in 'temp' folder in local storage disk.
+        \Excel::store(new BookingExportExcel($this->collection), '/temp/' . $this->filename, 'local');
+
+        // Call action to create a generated report model and attach this file as a media object.
+        // This will then move the file to the appropriate folder on the 'exports' disk so that
+        // we are able to filter exports based by a user or an agent.
+        return (new PersistExportedFileAction())->execute($this);
     }
+
+    /**
+     * @return string
+     */
+    public function type(): string
+    {
+        return 'booking_export';
+    }
+
+
 
 }

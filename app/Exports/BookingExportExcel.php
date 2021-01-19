@@ -2,21 +2,21 @@
 
 namespace App\Exports;
 
-use Maatwebsite\Excel\Concerns\FromCollection;
+use App\Queries\Bookings\BookingsCollection;
 
-class BookingExportExcel implements FromCollection
+
+class BookingExportExcel extends BaseReport
 {
-    protected $bookings;
-
-    public function __construct($bookings)
-    {
-        $this->bookings = $bookings;
-    }
     /**
-    * @return \Illuminate\Support\Collection
-    */
-    public function collection()
+     * @return \App\Models\Bookings\Booking[]|\Illuminate\Database\Eloquent\Collection
+     */
+    public function query()
     {
-        return $this->bookings;
+      return (new BookingsCollection())->get();
+    }
+
+    public function type():string
+    {
+        return 'booking_export';
     }
 }

@@ -32,7 +32,7 @@ class ImportMappingController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return ImportMapping|\Illuminate\Database\Eloquent\Model|\Illuminate\Http\Response
      */
     public function store(ImportMappingRequest $request)
     {

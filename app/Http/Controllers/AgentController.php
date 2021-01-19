@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateAgentRequest;
 use App\Models\Agent;
-use Illuminate\Http\Request;
 
 class AgentController extends Controller
 {

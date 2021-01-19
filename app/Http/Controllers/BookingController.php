@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Actions\Booking\CreateBookingAction;
 use App\Http\Requests\CreateBookingRequest;
-use App\Models\Booking;
+use App\Models\Bookings\Booking;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller

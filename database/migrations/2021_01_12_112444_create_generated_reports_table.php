@@ -17,10 +17,12 @@ class CreateGeneratedReportsTable extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('user_id');
+            $table->foreignId('agent_id')->nullable();
             $table->string('type');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('agent_id')->references('id')->on('agents')->cascadeOnDelete();
         });
     }
 

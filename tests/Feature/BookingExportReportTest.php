@@ -2,13 +2,14 @@
 
 namespace Tests\Feature;
 
+use App\Actions\Reports\BookingExportAction;
+use App\Exports\BookingExportExcel;
 use App\Models\Agent;
-use App\Models\Booking;
+use App\Models\Bookings\Booking;
+use App\Models\GeneratedReports;
 use App\Models\Product;
-use App\Models\Reports\BookingExportReport;
-use Carbon\Carbon;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class BookingExportReportTest extends TestCase
@@ -19,6 +20,7 @@ class BookingExportReportTest extends TestCase
     public $product;
     public $bookings;
     public $bookingCount = 10;
+    public $user;
 
     public function setUp(): void
     {
@@ -29,20 +31,22 @@ class BookingExportReportTest extends TestCase
         $this->bookings = Booking::factory()->count($this->bookingCount)
             ->create([
                 'agent_id' => $this->agent->id,
-                'product_id' => $this->product->id
+                'product_id' => $this->product->id,
             ]);
+
+        $this->user = User::factory()->create();
     }
 
-    public function test_a_new_instance_of_booking_export_report_can_be_created()
+    public function test_a_new_instance_of_booking_export_report_can_be_created_and_a_generated_report_model_is_returned()
     {
-        $report = new BookingExportReport(new Booking);
+        $this->actingAs($this->user);
 
-        $date = Carbon::today();
-        $toDate = Carbon::today()->addMonths(3);
+        $report = (new BookingExportAction)->execute(new BookingExportExcel());
 
-        $report->arrivingBetween($date, $toDate);
-        $report->returningBetween($date, $toDate);
+        $this->assertInstanceOf(GeneratedReports::class, $report);
 
-        dd($report->generate());
+        $this->assertDatabaseCount('generated_reports', 1);
+
+        $this->assertCount(1, $report->getMedia('exports'));
     }
 }

@@ -4,16 +4,17 @@
 namespace App\Actions\Reports;
 
 
-use App\Models\GeneratedReports;
-
 class PersistExportedFileAction
 {
-    public function execute($file, GeneratedReports $report)
+    public function execute($report)
     {
-        $report->name = $file;
+        $persistedReport = (new CreateGeneratedReportAction())->execute($report);
 
-        $path = \Storage::path($file);
+        if ($persistedReport) {
+            $persistedReport->addMedia(\Storage::path('temp/' . $report->filename))
+                ->toMediaCollection('exports');
+        }
 
-
+       return $persistedReport;
     }
 }

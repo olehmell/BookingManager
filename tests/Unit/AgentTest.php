@@ -5,10 +5,8 @@ namespace Tests\Unit;
 use App\Actions\Booking\CreateBookingAction;
 use App\Models\Agent;
 use App\Models\AgentProduct;
-use App\Models\Booking;
+use App\Models\Bookings\Booking;
 use App\Models\Product;
-use Faker\Generator;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Tests\TestCase;
@@ -165,7 +163,7 @@ class AgentTest extends TestCase
                 'price' => ['total' => 50]
             ])->toArray();
 
-        $bokingOne = (new CreateBookingAction())->execute($bookingOneData);
+        $bookingOne = (new CreateBookingAction())->execute($bookingOneData);
 
         // This calculation is based on the default commission level of 25%
         $this->assertEquals(5000, $agent->revenue());

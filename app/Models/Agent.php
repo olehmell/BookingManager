@@ -18,7 +18,7 @@ class Agent extends Model
 
     public function bookings()
     {
-        return $this->hasMany(Booking::class, 'agent_id');
+        return $this->hasMany(\App\Models\Bookings\Booking::class, 'agent_id');
     }
 
     public function revenue()

@@ -4,9 +4,9 @@
 namespace App\Actions\Booking;
 
 
-use App\Models\Agent;
-use App\Models\Booking;
-use App\Models\Product;
+use App\Models\Bookings\Agent;
+use App\Models\Bookings\Booking;
+use App\Models\Bookings\Product;
 use Carbon\Carbon;
 use function Symfony\Component\Translation\t;
 
@@ -71,9 +71,9 @@ class CreateBookingAction
 
     protected function convertPriceToCents()
     {
-        $this->data['price']['total'] = (float)$this->data['price']['total'] * 100;
-        $this->data['price']['list_price'] = (float)$this->data['price']['list_price'] * 100;
-        $this->data['price']['supplier_cost'] = (float)$this->data['price']['supplier_cost'] * 100;
+        foreach ($this->data['price'] as $index => $item) {
+            $this->data['price'][$index] = (float)$item * 100;
+        }
     }
 
     protected function getDate($date): Carbon

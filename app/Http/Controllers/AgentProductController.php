@@ -43,7 +43,7 @@ class AgentProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\AgentProduct  $agentProduct
+     * @param  \App\Models\Bookings\AgentProduct  $agentProduct
      * @return \Illuminate\Http\Response
      */
     public function show(AgentProduct $agentProduct)
@@ -54,7 +54,7 @@ class AgentProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\AgentProduct  $agentProduct
+     * @param  \App\Models\Bookings\AgentProduct  $agentProduct
      * @return \Illuminate\Http\Response
      */
     public function edit(AgentProduct $agentProduct)
@@ -66,7 +66,7 @@ class AgentProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AgentProduct  $agentProduct
+     * @param  \App\Models\Bookings\AgentProduct  $agentProduct
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, AgentProduct $agentProduct)
@@ -77,7 +77,7 @@ class AgentProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\AgentProduct  $agentProduct
+     * @param  \App\Models\Bookings\AgentProduct  $agentProduct
      * @return \Illuminate\Http\Response
      */
     public function destroy(AgentProduct $agentProduct)

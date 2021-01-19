@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateProductTypeRequest;
 use App\Models\ProductType;
-use Illuminate\Support\Facades\Request;
 
 class ProductTypeController extends Controller
 {

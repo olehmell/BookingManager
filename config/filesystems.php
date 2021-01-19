@@ -39,6 +39,11 @@ return [
           'root' => storage_path('app/imports'),
           'url' => env('APP_URL').'/imports'
         ],
+        'exports' => [
+            'driver' => 'local',
+            'root' => storage_path('app/exports'),
+            'url' => env('APP_URL'). '/exports'
+        ],
 
         'public' => [
             'driver' => 'local',

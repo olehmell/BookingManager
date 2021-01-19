@@ -5,8 +5,6 @@ namespace App\Actions\Booking;
 
 
 use App\Models\BookingImport;
-use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Storage;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class UploadBookingImportFileAction

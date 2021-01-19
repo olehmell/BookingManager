@@ -1,14 +1,13 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Bookings;
 
 use App\Models\Agent;
-use App\Models\Booking;
+use App\Models\Bookings\Booking;
 use App\Models\Product;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use function MongoDB\BSON\toJSON;
 
 class BookingFactory extends Factory
 {
@@ -64,7 +63,7 @@ class BookingFactory extends Factory
     protected function price()
     {
         return [
-            'total' => 1000,
+            'total' => 10000,
             'list_price' => 10000,
             'supplier_cost' => 2500,
         ];

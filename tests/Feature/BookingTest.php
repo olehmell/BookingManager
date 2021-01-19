@@ -4,10 +4,9 @@ namespace Tests\Feature;
 
 use App\Actions\Booking\CreateBookingAction;
 use App\Models\Agent;
-use App\Models\Booking;
+use App\Models\Bookings\Booking;
 use App\Models\Product;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class BookingTest extends TestCase

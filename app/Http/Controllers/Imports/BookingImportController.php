@@ -9,10 +9,7 @@ use App\Exceptions\MissingImportMappingException;
 use App\Http\Controllers\Controller;
 use App\Models\BookingImport;
 use Illuminate\Http\Request;
-use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Validation\ValidationException;
-use InvalidArgumentException;
 
 class BookingImportController extends Controller
 {

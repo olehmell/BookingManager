@@ -41,7 +41,7 @@ class GeneratedReportsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\GeneratedReports  $generatedReports
+     * @param  \App\Models\Bookings\GeneratedReports  $generatedReports
      * @return \Illuminate\Http\Response
      */
     public function show(GeneratedReports $generatedReports)
@@ -52,7 +52,7 @@ class GeneratedReportsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\GeneratedReports  $generatedReports
+     * @param  \App\Models\Bookings\GeneratedReports  $generatedReports
      * @return \Illuminate\Http\Response
      */
     public function edit(GeneratedReports $generatedReports)
@@ -64,7 +64,7 @@ class GeneratedReportsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\GeneratedReports  $generatedReports
+     * @param  \App\Models\Bookings\GeneratedReports  $generatedReports
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, GeneratedReports $generatedReports)
@@ -75,7 +75,7 @@ class GeneratedReportsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\GeneratedReports  $generatedReports
+     * @param  \App\Models\Bookings\GeneratedReports  $generatedReports
      * @return \Illuminate\Http\Response
      */
     public function destroy(GeneratedReports $generatedReports)

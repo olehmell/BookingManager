@@ -4,7 +4,7 @@
 namespace App\Imports;
 
 
-use App\Models\Product;
+use App\Models\Bookings\Product;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 
