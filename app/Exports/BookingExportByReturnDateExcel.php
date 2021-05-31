@@ -5,7 +5,7 @@ namespace App\Exports;
 use App\Queries\Bookings\BookingsReturningOnThisDate;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
-class BookingExportByReturnDateExcel extends BaseReport
+class BookingExportByReturnDateExcel extends BaseReport implements FromCollection
 {
     public $date;
 

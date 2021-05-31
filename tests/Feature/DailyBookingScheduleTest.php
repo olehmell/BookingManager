@@ -6,12 +6,11 @@ use App\Actions\Reports\BookingExportAction;
 use App\Exports\DailySchedule;
 use App\Models\Agent;
 use App\Models\Bookings\Booking;
+use App\Models\GeneratedReports;
 use App\Models\Product;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Str;
 use Tests\TestCase;
 
 class DailyBookingScheduleTest extends TestCase
@@ -94,5 +93,10 @@ class DailyBookingScheduleTest extends TestCase
             )
         );
 
+        $this->assertInstanceOf(GeneratedReports::class, $report);
+
+        $this->assertDatabaseCount('generated_reports', 1);
+
+        $this->assertCount(1, $report->getMedia('exports'));
     }
 }

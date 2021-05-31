@@ -20,79 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f01eb1-0c1c-4ad9-aa9a-99f6fdda1145" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Actions/Reports/BookingExportAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Reports/CreateGeneratedReportAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/BaseReport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/BookingExportByArrivalDateExcel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/BookingExportByReturnDateExcel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/BookingExportReportInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/DailySchedule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Queries/Bookings/BookingsArrivingOnThisDate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Queries/Bookings/BookingsCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Queries/Bookings/BookingsReturningOnThisDate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/WorksWithBookingExports.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-05QZk4gDWFsi9LDjAqx82Ne7wHvQUbsP.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-2PqHT7gbz9frWqMk12gbcISRZOxPQNDa.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-59FsKlyxHEeGrc0EVATIbQTbMXYFdIvT.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-65em72l8KqqvsK2OQAynl29OddMYGqNf.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-BJKYPjzNaJg6kiZBZSUHI9gSVh0pryWG.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-CK86Af8bhrpuIHx5APHJ3zvJPUaSooYr.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-JnY0Z4l4FNiPYGJQGGz8KTHBulnPdrdw.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-Khx8B12OUFoIKdFMt1UnMxIMPo0mRxky.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-LC7WqrcAUTsN6GN6207mRvMmlxBeNl8D.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-LppFLZ61H1JuaL5beI8NkIPbNHTFW9uV.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-RMnJbHbvxHyGxnkLRaVol0mDtL9DQo09.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-TPsjn8viyX6PkrBJXAvYw5bbGlnvz5yO.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-WA9JEOqBtgLP4bme2SDvKooSpt7QnhAw.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-ZcPpqh76bmN5IlQ0xO3aUoxu2W64QKYM.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-a9McEyWv3cJyR5eH37MImmvVuLIngiAG.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-bAcxmiPXv1pld9zzpIlBTe1cpsumpTXn.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-dN4ZqoWEMlfDB99bYHbzByX4tRd5MKyR.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-eBzMb4jQTxenSjTASPMSsAZpgkY5gAl9.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-eJ6xWkZxiFfvdZsrrt9yPJ25EyKr7pM5.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-gXz6z1QeNTw2PHJUtObwU5Plpw68vXVB.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-jSofmsCQ6vGbsRKHkanHBk0POVPNNRqV.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-pY6TZru1KMor9gz8caziuziOlaSHZOVH.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-tEanWveRV4mqy5a7NwOLySLE1lvFiAh5.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/BookingExportByArrivalDateReportTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/BookingExportByReturnDateReportTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/DailyBookingScheduleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Reports/BookingWaiverAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exports/WaiverPDF.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/FormCard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cars-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form-input-group.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form-select-group.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/save-button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/sidebar-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/content-aside-left.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/old-nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reports/waiver-pdf.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-5rdIXHvvFRnIKHcKFY93ullr2ALG5RJ0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-CunQfXZwVpxLR8JwLYIrZIdULn2HAYxc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-DYZD7GboEZCA836daK3w0dOwynBZkDiI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-IQBB03BXypRI2mHXtGkHQox0vBLiY4kN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-KholbZIkDaf7iUkW1ylYkyE34cBersoS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-M4acqEsWy5ZDYvYrvyNarGzkWf4cAc2P.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-MdqXogEbKr8c7ITjw8D4Aet8GAfGVPv9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-gsSlkOHE6DZemXc1wCDLXSFGARSd6Ukj.dompdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/WaiverTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gpar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gpar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper_models.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper_models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Booking/CreateBookingAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Booking/CreateBookingAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Booking/ProcessBookingImportFileAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Booking/ProcessBookingImportFileAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Booking/UploadBookingImportFileAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Booking/UploadBookingImportFileAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Reports/PersistExportedFileAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Reports/PersistExportedFileAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Reports/BookingExportAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Reports/BookingExportAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exports/BaseReport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/BaseReport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exports/BookingExportByArrivalDateExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/BookingExportByArrivalDateExcel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exports/BookingExportByReturnDateExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/BookingExportByReturnDateExcel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Exports/BookingExportExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/BookingExportExcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AgentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AgentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AgentProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AgentProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GeneratedReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GeneratedReportsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ImportMappingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ImportMappingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Imports/BookingImportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Imports/BookingImportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductTypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Imports/BookingImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/BookingImport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Imports/BookingImportObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/BookingImportObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Agent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Agent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bookings/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/GeneratedReports.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GeneratedReports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reports/BookingExportReport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reports/BookingExportReport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reports/Report.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reports/Report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exports/DailySchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/DailySchedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BookingFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/Bookings/BookingFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/Reports/ReportFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/Reports/ReportFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_12_112444_create_generated_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_112444_create_generated_reports_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProductTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AgentProductTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AgentProductTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/BookingExportReportTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/BookingExportReportTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/BookingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/BookingTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ImportBookingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ImportBookingTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ImportMappingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ImportMappingTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/AgentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/AgentTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/parkright.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/parkright.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/DailyBookingScheduleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DailyBookingScheduleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +90,7 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
@@ -243,6 +222,12 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mKX2G9KfxloVjKfIH52SwPgPH9" />
@@ -257,7 +242,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Queries/Bookings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -271,6 +256,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/storage/app" />
       <recent name="$PROJECT_DIR$/app/Queries/Bookings" />
       <recent name="$PROJECT_DIR$/tests/Unit" />
     </key>
@@ -298,7 +285,11 @@
       <updated>1609243046869</updated>
       <workItem from="1609243047980" duration="55395000" />
       <workItem from="1609951805359" duration="53992000" />
-      <workItem from="1610620333559" duration="46187000" />
+      <workItem from="1610620333559" duration="54598000" />
+      <workItem from="1611185510689" duration="3045000" />
+      <workItem from="1611234265526" duration="8514000" />
+      <workItem from="1611495973340" duration="530000" />
+      <workItem from="1611503099934" duration="661000" />
     </task>
     <servers />
   </component>
@@ -315,6 +306,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -324,27 +316,31 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="965" y="529" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1610360817035" />
-    <state x="1081" y="409" key="#com.intellij.ide.util.MemberChooser" timestamp="1611093394765">
+    <state x="1081" y="409" key="#com.intellij.ide.util.MemberChooser" timestamp="1611159559250">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="1081" y="409" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1611093394765" />
-    <state x="1018" y="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611065392481">
+    <state x="1081" y="409" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1611159559250" />
+    <state x="1018" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611179531844">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="1018" y="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1611065392481" />
-    <state x="1075" y="446" key="NewPhpClassDialog" timestamp="1611063571498">
+    <state x="1018" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1611179531844" />
+    <state x="1018" y="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611159652287">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="1018" y="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1611159652287" />
+    <state x="1075" y="446" key="NewPhpClassDialog" timestamp="1611243348996">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="608" y="-994" key="NewPhpClassDialog/0.25.1680.1025/-467.-1415.2560.1415@-467.-1415.2560.1415" timestamp="1610454426736" />
-    <state x="1075" y="446" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1611063571498" />
-    <state x="1101" y="656" key="NewPhpFileDialog" timestamp="1610967543127">
+    <state x="1075" y="446" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1611243348996" />
+    <state x="1101" y="656" key="NewPhpFileDialog" timestamp="1611322955463">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="1101" y="656" key="NewPhpFileDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1610967543127" />
-    <state x="789" y="368" key="SettingsEditor" timestamp="1610380707539">
+    <state x="1101" y="656" key="NewPhpFileDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1611322955463" />
+    <state x="789" y="368" key="SettingsEditor" timestamp="1611186665475">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="789" y="368" key="SettingsEditor/0.25.2560.1415@0.25.2560.1415" timestamp="1610380707539" />
+    <state x="789" y="368" key="SettingsEditor/0.25.2560.1415@0.25.2560.1415" timestamp="1611186665475" />
     <state x="1010" y="468" width="540" height="540" key="StructurePopup" timestamp="1610291898644">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
@@ -353,10 +349,10 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="1155" y="593" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.25.2560.1415@0.25.2560.1415" timestamp="1610026453685" />
-    <state x="945" y="349" width="670" height="676" key="search.everywhere.popup" timestamp="1611095072463">
+    <state x="945" y="349" width="670" height="676" key="search.everywhere.popup" timestamp="1611232056872">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="945" y="349" width="670" height="676" key="search.everywhere.popup/0.25.2560.1415@0.25.2560.1415" timestamp="1611095072463" />
+    <state x="945" y="349" width="670" height="676" key="search.everywhere.popup/0.25.2560.1415@0.25.2560.1415" timestamp="1611232056872" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

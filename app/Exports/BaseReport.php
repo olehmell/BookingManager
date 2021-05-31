@@ -12,7 +12,7 @@ use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithTitle;
 
-abstract class BaseReport implements FromCollection, WithHeadings, BookingExportReportInterface, ShouldAutoSize
+abstract class BaseReport implements WithHeadings, BookingExportReportInterface, ShouldAutoSize
 {
     use Exportable;
 

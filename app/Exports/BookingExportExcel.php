@@ -3,9 +3,10 @@
 namespace App\Exports;
 
 use App\Queries\Bookings\BookingsCollection;
+use Maatwebsite\Excel\Concerns\FromCollection;
 
 
-class BookingExportExcel extends BaseReport
+class BookingExportExcel extends BaseReport implements FromCollection
 {
     /**
      * @return \App\Models\Bookings\Booking[]|\Illuminate\Database\Eloquent\Collection

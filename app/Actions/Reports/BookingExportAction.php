@@ -8,8 +8,6 @@ use App\Exports\BaseReport;
 
 class BookingExportAction
 {
-    public $action;
-    public $export;
 
     public function execute(BaseReport $export)
     {

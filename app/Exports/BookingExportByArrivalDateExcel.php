@@ -3,8 +3,9 @@
 namespace App\Exports;
 
 use App\Queries\Bookings\BookingsArrivingOnThisDate;
+use Maatwebsite\Excel\Concerns\FromCollection;
 
-class BookingExportByArrivalDateExcel extends BaseReport
+class BookingExportByArrivalDateExcel extends BaseReport implements FromCollection
 {
     public $date;
 
